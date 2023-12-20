@@ -57,8 +57,8 @@ class portenta:
             self.log_and_serial_send("Attempting to connect to wifi")
             self.wlan.active(True)
             if not self.wlan.isconnected():
-                SSID = 'Lesko'
-                self.wlan.connect(SSID, '12081999')
+                SSID = 'Wifi_name'
+                self.wlan.connect(SSID, 'password')
                 start_time = time.time()  # Record the start time
                 timeout = 5  # Set the timeout duration in seconds
                 while not self.wlan.isconnected():

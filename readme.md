@@ -1,5 +1,5 @@
-# Socket Stream(lit)
-This code implements wireless socket communication between a server and client - written in pure python with a user interface for both computers. To recreate what ive done here you'll need two laptops and a network to communicate over. Make sure your IP addresses and subnet masks are correct and networkable. 
+# Microcontroller Server
+This code implements a wireless server run on the portenta H7. Written in pure Micropython and created for learning purposes. This code can be used as the basis for over wifi communication projects.
 
 ![Preview](docs/preview.png)
 
@@ -32,8 +32,8 @@ streamlit run client.py
 ## How it Works
 
 The app as follows:
-1. The server waits for a connection
-2. The client connects to the server
+1. The microcontroller connects to the internet
+2. Then, the board 
 3. The client waits for text input from the user
 4. The client send the user data to the server
 5. The server displays the data as text and responds with a received message
