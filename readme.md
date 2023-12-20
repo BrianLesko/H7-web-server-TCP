@@ -8,24 +8,14 @@ This code implements a wireless server run on the portenta H7. Written in pure M
 ## Local Computer Dependencies
 
 This code uses the following libraries:
-- `streamlit`: For creating the user interface
+- `pyb`: pyboard library specific to the hardware used
 - `socket`: For handling the system level communication hardware 
 
 &nbsp;
 
 ## Run this demo yourself
 
-Clone the repository on two computers and install the necessary dependencies using pip. Next, run the streamlit apps in a terminal in the directory of the repositories
-
-on the server computer:
-``` 
-streamlit run server.py
-```
-
-on the client computer:
-``` 
-streamlit run client.py
-```
+To run this code you'll need a microcontroller running Micropython that has wifi capabilities and also comes with the pyb library. Arduino has some great resources. 
 
 &nbsp;
 
@@ -33,20 +23,18 @@ streamlit run client.py
 
 The app as follows:
 1. The microcontroller connects to the internet
-2. Then, the board 
-3. The client waits for text input from the user
-4. The client send the user data to the server
-5. The server displays the data as text and responds with a received message
-6. The server continually waits for another message
-7. The client saves the socket connection but reruns and only displays the most recent message and server response
+2. Then, the board waits for a client connection
+3. After, the board waits or a TCP message
+4. Next, the board sends a response "Hello from Portenta"
+5. Finally, the code loops
 
 &nbsp;
 
 ## Topics 
 ```
-Python | Wifi | wireless communication | sockets | TCP | networking 
-decode bytes | communication | custom classes
-Self taught coding | Mechanical engineer | Robotics engineer 
+Python | Wifi | wireless communication | sockets | TCP | networking | micropython
+decode bytes | communication | custom classes | microcontroller | arduino 
+Self taught coding | Mechanical engineer | Robotics engineer | hardware engineer | controls engineer
 Brian Lesko | Brian Joseph Lesko
 ```
 &nbsp;
