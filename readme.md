@@ -1,5 +1,5 @@
 # Microcontroller Server
-This code implements a wireless server run on the portenta H7. Written in pure Micropython and created for learning purposes. This code can be used as the basis for over wifi communication projects.
+This code implements a wireless server run on the Arduino Portenta H7. Written in pure Micropython and created for learning purposes. This code can be used as the basis for over wifi communication projects.
 
 ![Preview](docs/preview.png)
 
